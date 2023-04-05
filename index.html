@@ -1,0 +1,88 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Document</title>
+    <link rel="stylesheet" href="src/style.css">
+    <script src="https://kit.fontawesome.com/f7947ff67e.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="navbar">
+        <img src="src/img/logo.png" alt="water" id="logo">
+        <div class="navbuttons">
+            <P><text>DEV</text> 
+                <a class="hover" href="#projects">projects</a>
+                <a class="hover" href="#contacts">contacts</a> 
+                <button class="git" onclick="window.open('https://www.github.com/relicrb', '_blank')">GitHub</button> </P>
+        </div>
+    </div>
+    <div class="bodyi">
+    <div class="intro">
+        <h1 class="first">
+            Hello there, I AM <br>
+            <span class="name">Relic</span>
+        </h1>
+        <br>
+        <p class="def">I am a <span class="col1">medium</span> level <span class="col2">developer</span>, who is <br> still trying to level up their programming skills.</p>
+        <p class="lang">
+            Major languages: 
+            <img src="src/img/download-removebg-preview.png" alt="py" class="langu"> &nbsp;
+            <img src="src/img/download-removebg-preview (1).png" alt="c" class="langu"> &nbsp;
+            <img src="src/img/download.png" alt="js" class="langu"> &nbsp;
+            
+        </p>
+    </div>
+    <div class="desktop">
+        <img src="src/img/desktop .png" alt="">
+    </div>
+</div>
+<br><br><br>
+<div class="projects" id="projects">
+    <h1 class="proj">Projects</h1>
+    <div class="card-container">
+        <div class="card">
+          <img src="src/img/wikipy.png" alt="Card 1" class="img">
+          <h2>Wikipy</h2>
+          <p>Wikipedia python is a CLI application to browse wikipedia from your terminal! It is still in development.</p>
+          <a href="#">Read More</a>
+          <br>
+          <span class="tagpy">#python</span>
+        </div>
+        
+        <div class="card">
+          <img src="src/img/soon.png" alt="Card 2" class="img">
+          <h2>Soon</h2>
+          <p>Coming soon</p>
+          <a href="#" id="cardbut">Learn More</a>
+        </div>
+      </div>
+      <div class="contacts" id="contacts">
+        <h1 class="proj con">Contacts</h1>
+        <div class="card-container">
+            <div class="card email">
+            <img src="src/img/email.png" alt="email" width="75px" height="auto">
+            <form>
+              <label>Email:</label> &nbsp;
+              <input type="text" id="email"> <br> <br>
+              <label>Subject:</label> &nbsp;
+              <input type="text" id="subject"> <br> <br>
+              <label>Message:</label> &nbsp; &nbsp;
+              <textarea id="message"></textarea> <br>
+              <button type="button" onclick="window.location.href = 'mailto:relicrb@gmail.com';">send</button>
+            </form>
+          </div>
+        </div> 
+      </div>
+      <footer>
+        <i class="fa-brands fa-discord" style="color: #b2becd;" onclick="window.open('https://www.discordapp.com/users/912167179196203028', '_blank')"></i> &nbsp;
+        <i class="fa-brands fa-youtube" style="color: #b2becd;" onclick="window.open('https://www.youtube.com/@reliccodes', '_blank')"></i> &nbsp;
+        <i class="fa-brands fa-twitter" style="color: #b2becd;" onclick="window.open('https://twitter.com/elliot_mr1', '_blank')"></i>
+        <br>
+       <p class="foot-main">Helpful Links</p>
+       <p class="footsmall">@Relic 2023</p>
+      </footer>
+      
+</body>
+</html>

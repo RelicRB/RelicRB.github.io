@@ -1,0 +1,427 @@
+@font-face {
+  font-family: "sofia-pro";
+  src: url("/Fonts/sofiapro-light.otf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "cubano";
+  src: url("/Fonts/Cubano.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+a{
+  text-decoration: none;
+}
+
+body{
+    background-image: linear-gradient(#12181B, #36393e);
+    color: #DBE1E8;
+    display: grid;
+    grid-template-areas: "nav"
+                         "body"
+                         "proj"
+                         "cont"
+                         "foot";
+    background-size: 100% 200%;
+}
+
+#logo{
+    height: 100px;
+    width: 100px;
+}
+.navbuttons{
+    margin-left: calc(100% - 650px);
+    word-spacing: 50px;
+    width: 75%;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 50px;
+    cursor: pointer;
+}
+text{
+    font-family: cubano;
+    color: #22C55E;
+    font-size: 13px;
+    border:  #22C55E 2px solid;
+    padding: 3.25px 6.5px;
+    font-weight: bold;
+}
+
+.git{
+    background-color: #FFFF;
+    color: #000;
+    font-family: "cubano";
+    padding: 8px 16px;
+    font-size: 20px;
+    filter: contrast(20);
+    transition: transform .2s;
+    cursor: pointer;
+    
+}
+.git:hover{
+  transform: scale(1.05);
+  background-color: blue;
+}
+ 
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "sofia-pro";
+    font-size: 16.8px;
+    font-weight: bolder;
+    padding: 10px;
+    grid-area: nav;
+  }
+  
+  .first{
+    font-family: "cubano", sans-serif;
+    font-weight: bolder;
+    font-size: 48.75px;
+    color: #FFFF;
+  }
+  .name{
+    color: #D4A017;
+  }
+  .hover {
+    transition: transform .2s;
+    display: inline-block; /* This is important to apply the transform effect */
+    color: #b2becd;
+  }
+  
+  .hover:hover {
+    transform: scale(1.05);
+    color: red;
+  }
+  .intro {
+    text-align: center;
+    margin-top: 75px;
+    margin-right: auto;
+    margin-left: 150px;
+    display: grid;
+    min-width: min-content;
+    max-width: max-content;
+    grid-area: intro;
+  }
+  .def{
+    color: #b2becd;
+    font-size: 19.5px;
+    font-family: "sofia-pro", sans-serif;
+    font-weight: bold;
+  }
+  .col1{
+    color: #EAB308;
+  }
+  .col2{
+    color: #ec4899;
+  }
+  .langu{
+    width: 25px;
+    height: 25px;
+  }
+  .lang{
+    font-family: "sofia-pro", sans-serif;
+  }
+
+  .desktop{
+    grid-area: desktop;
+    width: 500px;
+    height: 500px;
+  }
+  .bodyi{
+    display: grid;
+    grid-template-areas: "intro desktop";
+    grid-area: body;
+  }
+  #projects{
+    padding-top: 100px;
+  }
+  .projects{
+    text-align: center;
+    grid-area: proj;
+  }
+  .proj{
+    font-size: 28px;
+    font-family: "cubano", sans-serif;
+    color: #EF4444;
+  }
+  .card-container {
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    height: 50%;
+  }
+  
+  .card {
+    width: 20%;
+    height: max-content;
+    padding: 20px;
+    background-color: #2A2E35;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    overflow: hidden;
+    padding-bottom: 50px;
+  }
+  
+  .card .img {
+    width: 100%;
+    height: 50%;
+    padding-bottom: 10px;
+    padding-top: 0;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  
+  .card h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    font-family: "cubano", sans-serif;
+  }
+  
+  .card p {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 10px;
+    font-family: "sofia-pro", sans-serif;
+    font-weight: bold;
+  }
+  
+  .tagpy{
+    font-size: 9.75px;
+    font-family: "sofia-pro", sans-serif;
+    color: #b2becd;
+    background-color: #8080FF;
+    padding: 3.25px 6.5px 4.87px;
+    border-radius: 5px;
+    filter: contrast(8);
+  }
+  .card a {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #22C55E;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    font-family: "sofia-pro", sans-serif;
+  }
+  
+  .card a:hover {
+    background-color: #0E7C40;
+  }
+  .email{
+    width: 75%;
+  }
+
+ input{
+  padding: 9.75px;
+  background-color: #12181B4D;
+  border: none;
+  color: #DBE1E8;
+ }
+button{
+  background-color: #3b82f6;
+  padding: 9.7px 13px;
+  border: none;
+  font-family: "sofia-pro", sans-serif;
+  margin-top: 20px;
+  color: #DBE1E8;
+  filter: contrast(7);
+}
+button:after {
+  content: "";
+  background: rgba(255, 255, 255, 0.5);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 0;
+  height: 0;
+  border-radius: 100%;
+  opacity: 1;
+  transition: width 0.3s ease-out, height 0.3s ease-out, opacity 0.3s ease-out;
+}
+
+button:active:after {
+  width: 200%;
+  height: 200%;
+  opacity: 0;
+}
+label{
+  font-family: "sofia-pro", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: bold;
+}
+textarea{
+  background-color: #12181B4D;
+  padding: 9.75px;
+  color: #DBE1E8;
+}
+.contacts{
+  grid-area: cont;
+}
+footer{
+  grid-area: foot;
+}
+.foot-main{
+  font-family: "cubano", sans-serif;
+  color: #b2becd;
+  font-size: 13px;
+}
+.footsmall{
+  color: #b2becd;
+  font-family: "sofia-pro", sans-serif;
+  font-size: 9.75px;
+}
+
+
+  @media only screen and (max-width: 768px) {
+    .bodyi {
+      grid-template-areas: "intro desktop";
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: min-content;
+    }
+    desktop {
+      max-width: 100%;
+      height: auto;
+      margin: auto 0;
+    }
+    .navbar {
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+    }
+    #logo {
+        height: 75px;
+        width: 75px;
+      }
+      
+      .navbuttons {
+        margin-left: 0;
+        width: 100%;
+        justify-content: center;
+        padding-left: 0;
+      }
+      
+      text {
+        font-size: 10px;
+        padding: 2.5px 5px;
+      }
+      
+      .git {
+        padding: 6px 12px;
+        font-size: 16px;
+      }
+      .intro {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+          "heading image"
+          "description image";
+        margin-top: 75px;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 960px;
+      }
+      .first {
+        font-size: 48.75px;
+        font-family: "cubano", sans-serif;
+        font-weight: bolder;
+        color: #fff;
+        grid-area: heading;
+        text-align: left;
+        align-self: center;
+      }
+      .name {
+        color: #D4A017;
+      }
+      .def {
+        font-size: 19.5px;
+        font-family: "sofia-pro", sans-serif;
+        font-weight: bold;
+        color: #b2becd;
+        grid-area: description;
+        text-align: left;
+        align-self: center;
+      }
+      .col1 {
+        color: #EAB308;
+      }
+      .col2 {
+        color: #ec4899;
+      }
+    }
+    
+  
+  
+  @media only screen and (max-width: 480px) {
+    .bodyi {
+      display: grid;
+      grid-template-areas:
+        "intro"
+        "desktop";
+    }
+    .desktop {
+      width: 80%;
+      height: auto;
+    }
+    .navbar {
+      padding: 5px;
+    }
+    #logo {
+        height: 50px;
+        width: 50px;
+      }
+      
+      .navbuttons {
+        word-spacing: 20px;
+      }
+      
+      text {
+        font-size: 8px;
+        padding: 2px 4px;
+      }
+      
+      .git {
+        padding: 4px 8px;
+        font-size: 12px;
+      }
+      .intro {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 50px;
+        margin-left: 20px;
+        margin-right: 20px;
+        max-width: 100%;
+      }
+      .first {
+        font-size: 36px;
+        font-family: "cubano", sans-serif;
+        font-weight: bolder;
+        color: #fff;
+        text-align: center;
+        margin-bottom: 20px;
+      }
+      .name {
+        color: #D4A017;
+      }
+      .def {
+        font-size: 16px;
+        font-family: "sofia-pro", sans-serif;
+        font-weight: bold;
+        color: #b2becd;
+        text-align: center;
+        margin-bottom: 20px;
+      }
+      .col1 {
+        color: #EAB308;
+      }
+      .col2 {
+        color: #ec4899;
+      }
+    }
